@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<StateScreen/>}/>
+          <Route path="/" element={<SigninScreen/>}/>
           <Route path="/dev/button" element={<ButtonScreen/>}/>
           <Route path="/dashboard/links" element={<LinksScreen/>}/>
           <Route path="/auth/signin" element={<SigninScreen/>}/>

@@ -1,12 +1,16 @@
 import './EmailInput.css'
 
-const EmailInput = () => {
+const EmailInput = (props) => {
+
+  const {setEmail} = props
+
   return (
     <div className="email-input-container">
         <label for="email-input">Email</label>
-        <input id="email-input" type="email"/>
+        <input onChange={(e)=>{setEmail(e.target.value)}} id="email-input" type="email"/>
     </div>
   )
+
 }
 
 export default EmailInput
