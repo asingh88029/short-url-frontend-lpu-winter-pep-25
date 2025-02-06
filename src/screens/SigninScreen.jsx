@@ -13,7 +13,7 @@ const SigninScreen = () => {
   return (
     <div className="signin-screen"> 
         {/* Form */}
-        <div className="form-container">
+        <div className="signin-form-container">
             <div>
                 <h1>Welcome to Shortify!</h1>
                 <h2>Login and start sharing</h2>

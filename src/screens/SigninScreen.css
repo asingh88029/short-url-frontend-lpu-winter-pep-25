@@ -1,4 +1,4 @@
-.form-container :nth-child(4){
+.signin-form-container :nth-child(4){
     display: flex;
     flex-direction: row-reverse;
 }
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.form-container{
+.signin-form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
     padding: 40px;
 }
 
-.form-container > div:first-child{
+.signin-form-container > div:first-child{
     display: flex;
     flex-direction: column;
     gap : 10px

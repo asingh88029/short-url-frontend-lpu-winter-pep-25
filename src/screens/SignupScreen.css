@@ -4,13 +4,13 @@
     align-items: center;
 }
 
-.form-container > div:first-child{
+.signup-form-container > div:first-child{
     display: flex;
     flex-direction: column;
     gap : 10px;
 }
 
-.form-container{
+.signup-form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -13,7 +13,7 @@ const SignupScreen = () => {
   return (
     <div className="signup-screen"> 
         {/* Form */}
-        <div className="form-container">
+        <div className="signup-form-container">
             <div>
                 <h1>Welcome to Shortify!</h1>
                 <h2>Register and start sharing</h2>
@@ -23,7 +23,7 @@ const SignupScreen = () => {
             <PasswordInput/>
             <FilledButton size="large"><MdOutlineAccountCircle/> Register</FilledButton>
             <div className="tnc-container">
-                <p>By logging in with an account, you agree to Shortify's {<Link to="/terms-and-conditions">Terms of Service</Link>}, {<Link to="/privacy-policy">Privacy Policy</Link>} and Acceptable Use Policy.</p>
+                <p>By Registering in with an account, you agree to Shortify's {<Link to="/terms-and-conditions">Terms of Service</Link>}, {<Link to="/privacy-policy">Privacy Policy</Link>} and Acceptable Use Policy.</p>
             </div>
         </div>
         {/* Image */}
