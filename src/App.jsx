@@ -2,6 +2,7 @@ import ButtonScreen from "./screens/ButtonScreen"
 import LinksScreen from "./screens/LinksScreen"
 import SigninScreen from "./screens/SigninScreen"
 import SignupScreen from "./screens/SignupScreen"
+import StateScreen from "./screens/StateScreen"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<StateScreen/>}/>
           <Route path="/dev/button" element={<ButtonScreen/>}/>
           <Route path="/dashboard/links" element={<LinksScreen/>}/>
           <Route path="/auth/signin" element={<SigninScreen/>}/>

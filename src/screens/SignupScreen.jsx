@@ -5,15 +5,15 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 
 import { Link } from "react-router-dom"
 
-import './signupScreen.css'
+import './SignupScreen.css'
 
 import signupImage from './../assets/images/arranging-files.png'
 
 const SignupScreen = () => {
   return (
-    <div id="signup-screen"> 
+    <div className="signup-screen"> 
         {/* Form */}
-        <div id="form-container">
+        <div className="form-container">
             <div>
                 <h1>Welcome to Shortify!</h1>
                 <h2>Register and start sharing</h2>
@@ -21,8 +21,8 @@ const SignupScreen = () => {
             </div>
             <EmailInput/>
             <PasswordInput/>
-            <FilledButton size="large"><MdOutlineAccountCircle/> Login</FilledButton>
-            <div>
+            <FilledButton size="large"><MdOutlineAccountCircle/> Register</FilledButton>
+            <div className="tnc-container">
                 <p>By logging in with an account, you agree to Shortify's {<Link to="/terms-and-conditions">Terms of Service</Link>}, {<Link to="/privacy-policy">Privacy Policy</Link>} and Acceptable Use Policy.</p>
             </div>
         </div>

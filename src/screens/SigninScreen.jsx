@@ -11,9 +11,9 @@ import SignInImage from './../assets/images/arranging-files.png'
 
 const SigninScreen = () => {
   return (
-    <div id="signin-screen"> 
+    <div className="signin-screen"> 
         {/* Form */}
-        <div id="form-container">
+        <div className="form-container">
             <div>
                 <h1>Welcome to Shortify!</h1>
                 <h2>Login and start sharing</h2>

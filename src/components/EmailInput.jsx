@@ -3,7 +3,7 @@ import './EmailInput.css'
 const EmailInput = () => {
   return (
     <div className="email-input-container">
-        <label for="email-input">Email</label> <br></br>
+        <label for="email-input">Email</label>
         <input id="email-input" type="email"/>
     </div>
   )
