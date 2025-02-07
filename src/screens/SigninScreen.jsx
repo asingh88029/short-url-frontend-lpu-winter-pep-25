@@ -2,8 +2,10 @@ import EmailInput from "../components/EmailInput"
 import PasswordInput from "../components/PasswordInput"
 import FilledButton from "../components/FilledButton"
 import { FaSignInAlt } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import axios from "axios";
+
+import AppContext from "../context";
 
 const {VITE_APP_BACKEND_API_BASE_URL} = import.meta.env
 
@@ -13,7 +15,9 @@ import './SigninScreen.css'
 
 import SignInImage from './../assets/images/arranging-files.png'
 
-const SigninScreen = () => {
+const SigninScreen = (props) => {
+
+    const {isLoginedUser, setIsLoginedUser} = useContext(AppContext)
 
     const [email, setEmail] = useState("")
 
@@ -43,6 +47,7 @@ const SigninScreen = () => {
                 // set token inside localstorage of the browser
                 localStorage.setItem("token", token)
                 // redirect user to the dashboard
+                setIsLoginedUser(true)
                 navigation("/dashboard/links")
             }
 
