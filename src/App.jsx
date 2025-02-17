@@ -14,8 +14,10 @@ function App() {
 
   const [isDarkTheme, setisDarkTheme] = useState(false)
 
+  const [userToken, setUserToken] = useState("")
+
   return (
-    <AppContext.Provider value={{isLoginedUser, setIsLoginedUser, isDarkTheme, setisDarkTheme}}>
+    <AppContext.Provider value={{isLoginedUser, setIsLoginedUser, isDarkTheme, setisDarkTheme, userToken, setUserToken}}>
       <BrowserRouter>
         <Navbar/>
         <Routes>

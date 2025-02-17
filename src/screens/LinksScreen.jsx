@@ -1,4 +1,5 @@
 import LinkCard from './../components/LinkCard'
+import LinkInputContainer from '../components/LinkInputContainer';
 import { useEffect, useState } from 'react';
 
 import axios from 'axios';
@@ -14,6 +15,8 @@ const LinksScreen = ()=>{
     const navigate = useNavigate()
 
     const [urlsData, setUrlsData] = useState([])
+
+    const [toggleFlag, setToggleFlag] = useState(false)
  
     useEffect(()=>{
       (async()=>{
@@ -49,7 +52,7 @@ const LinksScreen = ()=>{
         }
         })()
 
-    },[])
+    },[toggleFlag])
 
     function formatDate(timestamp) {
       const date = new Date(timestamp * 1000); // Convert seconds to milliseconds
@@ -93,6 +96,7 @@ const LinksScreen = ()=>{
                 setPlayersCount(prevCount=>prevCount+1)
               }}
             >ADD Player</button>*/}
+            <LinkInputContainer setToggleFlag={setToggleFlag}/>
             <div className='links-container'>
                 {urlsData.map((element)=>{
                     return <LinkCard 

@@ -17,7 +17,7 @@ import SignInImage from './../assets/images/arranging-files.png'
 
 const SigninScreen = (props) => {
 
-    const {isLoginedUser, setIsLoginedUser} = useContext(AppContext)
+    const {isLoginedUser, setIsLoginedUser, userToken, setUserToken} = useContext(AppContext)
 
     const [email, setEmail] = useState("")
 
@@ -49,6 +49,7 @@ const SigninScreen = (props) => {
                 // redirect user to the dashboard
                 setIsLoginedUser(true)
                 navigation("/dashboard/links")
+                setUserToken(token)
             }
 
         }catch(err){
